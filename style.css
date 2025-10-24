@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+ 
+body {
+  background-color: #2d3240;
+  color: white;
+  display: flex;
+  height: 100vh;
+}
+ 
+.container {
+  display: flex;
+  width: 100%;
+}
+ 
+/* --- Lateral --- */
+.sidebar {
+  width: 250px;
+  background-color: #3b4252;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+ 
+.menu ul {
+  list-style: none;
+}
+ 
+.menu li {
+  margin-bottom: 20px;
+}
+ 
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+ 
+.menu a:hover {
+  color: #88c0d0;
+}
+ 
+/* --- Topo --- */
+.main-content {
+  flex: 1;
+  background-color: #2e3440;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #434c5e;
+  padding: 15px 25px;
+}
+ 
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #eceff4;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+}
+ 
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+}
+ 
+.search-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+ 
+.about-btn {
+  background-color: #5e81ac;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+ 
+.about-btn:hover {
+  background-color: #81a1c1;
+}
+ 
+/* --- Mapa --- */
+.map-section {
+  flex: 1;
+  padding: 20px;
+}

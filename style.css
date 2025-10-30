@@ -112,3 +112,19 @@ body {
   flex: 1;
   padding: 20px;
 }
+#sobre{
+display: block;
+height: 500px;
+width: 500px;
+background-color: #5e81ac;
+margin-top: 90px;
+margin-left: 590px;
+position: absolute;
+opacity: 90%;
+
+}
+#sobre p{
+font-size: 20px;
+text-align: center;
+
+}

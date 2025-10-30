@@ -16,7 +16,7 @@
       <nav class="menu">
         <ul>
           <li><a href="#">Paradas de Ônibus</a></li>
-          <li><a href="#">Paradas de Táxi</a></li>
+          <li><a href="#">Pontos de Táxi</a></li>
           <li><a href="#">Trensurb</a></li>
           <li><a href="#">Balsa</a></li>
           <li><a href="#">Bicicleta Itaú</a></li>
@@ -39,7 +39,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.0191654538213!2d-51.20414592453145!3d-30.030514874936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197802cdbab2ef%3A0x39d965580a8ffccb!2sParque%20Moinhos%20de%20Vento%20-%20Parc%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
           width="100%"
-          height="500"
+          height="1000"
           style="border:0;"
           allowfullscreen=""
           loading="lazy">
@@ -50,85 +50,3 @@
 </body>
 </html>
  
-=======
-    <header class="bg-gray-900">
-  <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-    <div class="flex lg:flex-1">
-      <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">Your Company</span>
-        <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" class="h-8 w-auto" />
-      </a>
-    </div>
-    <div class="flex lg:hidden">
-      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
-        <span class="sr-only">Open main menu</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-      </button>
-    </div>
-    <el-popover-group class="hidden lg:flex lg:gap-x-12">
-      <a href="#" class="text-sm/6 font-semibold text-white">Totem</a>
-      <a href="#" class="text-sm/6 font-semibold text-white">Home</a>
-      <a href="#" class="text-sm/6 font-semibold text-white">Map</a>
-      <a href="#" class="text-sm/6 font-semibold text-white">Company</a>
-    </el-popover-group>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
-    </div>
-  </nav>
-  <el-dialog>
-    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-      <div tabindex="0" class="fixed inset-0 focus:outline-none">
-        <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
-          <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" class="h-8 w-auto" />
-            </a>
-            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-400">
-              <span class="sr-only">Close menu</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-white/10">
-              <div class="space-y-2 py-6">
-                <div class="-mx-3">
-                  <button type="button" command="--toggle" commandfor="products" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-white/5">
-                    Product
-                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
-                      <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
-                    </svg>
-                  </button>
-                  <el-disclosure id="products" hidden class="mt-2 block space-y-2">
-                    <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Analytics</a>
-                    <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Engagement</a>
-                    <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Security</a>
-                    <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Integrations</a>
-                    <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Automations</a>
-                    <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Watch demo</a>
-                    <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Contact sales</a>
-                  </el-disclosure>
-                </div>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Features</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Marketplace</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Company</a>
-              </div>
-              <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log in</a>
-              </div>
-            </div>
-          </div>
-        </el-dialog-panel>
-      </div>
-    </dialog>
-  </el-dialog>
-    </header>
-    
-      <script src="https://cdn.tailwindcss.com"></script>
-</body>
-</html>
->>>>>>> 614e395133a356ef50956d7665c53b2ced6a8978

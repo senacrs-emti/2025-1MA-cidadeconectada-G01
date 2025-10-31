@@ -92,7 +92,6 @@ body {
   cursor: pointer;
   font-size: 18px;
 }
- 
 .about-btn {
   background-color: #5e81ac;
   border: none;
@@ -102,15 +101,14 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
- 
 .about-btn:hover {
   background-color: #81a1c1;
 }
- 
 /* --- Mapa --- */
 .map-section {
   flex: 1;
   padding: 20px;
+  margin-top: 45px;
 }
 #sobre{
 display: block;
@@ -118,13 +116,15 @@ height: 500px;
 width: 500px;
 background-color: #5e81ac;
 margin-top: 90px;
-margin-left: 590px;
+margin-left: 739px;
 position: absolute;
 opacity: 90%;
-
+margin-top: 134px;
 }
 #sobre p{
 font-size: 20px;
 text-align: center;
+margin-top: 50px;
+
 
 }

@@ -10,6 +10,21 @@
 </head>
  
 <body>
+<!-- Pagina de Login-->
+  <h2>Login</h2>
+  <form action="Login.PHP" method="post">
+  <label for="username">Usuário:</label>
+  <input type="text" name="nome" id="nome">
+  <label for="idade">Sua idade:</label>
+  <input name="idade" id="idade" type="number">
+  <button type="submit">Enviar</button>
+  </form>
+  <?php 
+  
+  ?>
+
+
+
   <div class="container">
     <aside class="sidebar">
       <h1 class="logo">Tótem POA</h1>

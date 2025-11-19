@@ -13,14 +13,20 @@
 <!-- Pagina de Login-->
   <h2>Login</h2>
   <form action="Login.PHP" method="post">
-  <label for="username">Usuário:</label>
-  <input type="text" name="nome" id="nome">
-  <label for="idade">Sua idade:</label>
-  <input name="idade" id="idade" type="number">
-  <button type="submit">Enviar</button>
+    <p>
+      <label>Email</label>
+      <input type="text" name="Email">
+    </p>
+    <p>
+      <label>Senha</label>
+      <input type="passaword" name="Senha">
+    </p>
+    <p>
+      <button type="submit">Entrar</button>
+    </p>
   </form>
   <?php 
-  
+
   ?>
 
 

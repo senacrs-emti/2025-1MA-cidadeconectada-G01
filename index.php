@@ -10,26 +10,6 @@
 </head>
  
 <body>
-<!-- Pagina de Login-->
-  <h1>Login</h1>
-  <form action="Login.PHP" method="post">
-    <p>
-      <label>Email</label>
-      <input type="text" name="Email">
-    </p>
-    <p>
-      <label>Senha</label>
-      <input type="passaword" name="Senha">
-    </p>
-    <p>
-      <button type="submit">Entrar</button>
-    </p>
-  </form>
-  <?php 
-
-  ?>
-
-
 
   <div class="container">
     <aside class="sidebar">

@@ -11,7 +11,7 @@
  
 <body>
 <!-- Pagina de Login-->
-  <h2>Login</h2>
+  <h1>Login</h1>
   <form action="Login.PHP" method="post">
     <p>
       <label>Email</label>

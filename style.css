@@ -77,12 +77,8 @@ body {
   cursor: pointer;
   font-size: 18px;
 }
-<<<<<<< Updated upstream
- 
-.about-btn {
-=======
+
 #btnSobre {
->>>>>>> Stashed changes
   background-color: #5e81ac;
   border: none;
   color: white;
@@ -92,7 +88,6 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-<<<<<<< Updated upstream
  
 .about-btn:hover {
   background-color: #81a1c1;
@@ -103,7 +98,6 @@ body {
   flex: 1;
   padding: 20px;
 }
-=======
 #btnSobre:hover {
   background-color: #81a1c1;
 }
@@ -134,4 +128,3 @@ body {
 }
 
 
->>>>>>> Stashed changes

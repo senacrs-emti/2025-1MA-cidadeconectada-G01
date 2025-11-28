@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Tótem POA</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <h1 class="logo">Tótem POA</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Paradas de Ônibus</a></li>
+          <li><a href="#">Pontos de Táxi</a></li>
+          <li><a href="#">Trensurb</a></li>
+          <li><a href="#">Bicicleta Itaú</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <!-- <div class="search-bar">
+          <input type="text" placeholder="Pesquisar..." />
+          <button class="search-btn">🔍</button>
+        </div> -->
+
+        <button id="btnSobre">Sobre nós</button>
+      </header>
+
+      <div id="sobreBox">
+        <h3>Sobre nós</h3>
+        <p>
+          Somos uma equipe dedicada a melhorar a mobilidade urbana de Porto Alegre,
+          oferecendo um sistema integrado de informações sobre transporte público.
+        </p>
+      </div>
+
+      <section class="map-section">
+        <iframe
+          src="https://miguuel7.github.io/MapJs2/"
+          width="100%"
+          height="670"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </section>
+    </main>
+  </div>
+  <footer>
+        <h3 id="nomeT">Totém Poa</h3>
+        <!-- <P id="Creditos">Creditos</P> -->
+        <p id="Direitos">Direitos</p>
+        <p id="Help">Help</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -128,12 +128,12 @@ body {
 }
 footer {
     width: 100%;
-    background-color: #5e81ac;
+    background-color: #2e3440;
     padding: 20px 0;
     position: fixed;
     bottom: 0;
     left: 0;
-    border-top: 2px solid rgba(0,0,0,0.1);
+    font-family: Montserrat (Bold / Semi-Bold);
 }
 
 .footer-content {
@@ -145,7 +145,7 @@ footer {
     padding: 0 20px;
 }
 
-.footer-title {
+.footer-logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -158,20 +158,26 @@ footer {
 
 .footer-links a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 500;
     transition: 0.3s ease;
 }
 
 .footer-links a:hover {
     opacity: 0.7;
+    filter: drop-shadow(10px 0 0 #000000) brightness(200%);
 }
 
 footer hr {
     margin-top: 10px;
     border: none;
     height: 1px;
-    background: transparent;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 
 .footer-copy {

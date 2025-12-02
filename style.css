@@ -16,6 +16,19 @@ body {
   flex-direction: column; /* Empilha os elementos de cima para baixo */
 }
 
+nav .menu li {
+    position: relative;
+    padding: 6px 18px;
+    border-radius: 25px;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+nav .menu li:hover {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    transform: translateY(-3px) scale(1.03);
+}
+
 nav  {
     width: 100%;
     position: fixed;

@@ -9,7 +9,7 @@ body {
   background-color: #a7a8a8;
   color: white;
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 
@@ -87,7 +87,7 @@ nav.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #434c5e;
+  background-color: #2e3440;
   padding: 15px 25px;
   position: relative;
 }
@@ -170,9 +170,9 @@ footer {
     height: 90px;
     background-color: #2e3440;
     padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    display: block;
+    align-items: flex-end;
 }
 
 .footer-content {

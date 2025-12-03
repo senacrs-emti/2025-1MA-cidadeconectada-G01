@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #151414;
   color: white;
   display: flex;       /* Coloca página inteira em flex */
   flex-direction: column; /* Empilha os elementos de cima para baixo */
@@ -48,8 +48,9 @@ nav  {
 /* LOGO */
 .logo {
     font-size: 20px;              /* aumentado */
-    font-weight: 700;
-    margin-right: 130px;           /* aproxima do menu */
+    font-weight: 7px;
+    margin-right: 10px;           /* aproxima do menu */
+    /* margin-left: 0 */
 }
 
 /* GITHUB */
@@ -59,7 +60,7 @@ nav  {
     gap: 6px;
     font-weight: 600;
     font-size: 20px;              /* maior */
-    margin-left: 130px;            /* aproxima do centro */
+    margin-left: 90px;            /* aproxima do centro */
 }
 
 
@@ -89,6 +90,12 @@ nav.active {
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
 }
 
+.img-logo {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
 
 .container {
   display: flex;
@@ -107,7 +114,7 @@ nav.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
+  background-color: #151414;
   padding: 15px 25px;
   position: relative;
 }
@@ -137,8 +144,6 @@ nav.active {
   cursor: pointer;
   font-size: 18px;
 }
-
-
 
 #btnSobre {
   background-color: #5e81ac;
@@ -186,62 +191,62 @@ nav.active {
 }
 
 footer {
-    width: 100%;
-    background-color: rgb(20, 20, 20);
-    padding: 20px 0;
-    margin-top: auto;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  padding: 20px 0;
+  margin-top: auto;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 .footer-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5f5f5
 }
 
 .footer-links ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
 
 .footer-links a:hover {
-    opacity: 0.7;
-    filter: drop-shadow(10px 0 0 #000000) brightness(200%);
+  opacity: 0.7;
+  filter: drop-shadow(10px 0 0 #000000) brightness(200%);
 }
 
 footer hr {
-    margin-top: 10px;
-    border: none;
-    height: 1px;
-    background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.25) 50%,
-        rgba(255, 255, 255, 0) 100%
-    );
+  margin-top: 10px;
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .footer-copy {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: white;
 }

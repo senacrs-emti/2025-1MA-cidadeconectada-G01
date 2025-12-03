@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  background-color: #2e3440;
+  background-color: rgba(20, 20, 20);
   color: white;
   display: flex;       /* Coloca página inteira em flex */
   flex-direction: column; /* Empilha os elementos de cima para baixo */
@@ -27,7 +27,7 @@ nav .menu li:hover {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8px);
     transform: translateY(-3px) scale(1.03);
-}
+} 
 
 nav  {
     width: 100%;
@@ -38,8 +38,8 @@ nav  {
     justify-content: center;      /* apróxima o centro */
     align-items: center;
     gap: 50px;                    /* distancia da logo e do github */
-    padding: 10px 20px;           /* muito mais compacto */
-    background: rgb(20, 20, 20);
+    padding: 10px 10px;           /* muito mais compacto */
+    background: rgb(15,15,15);
     color: white;
     transition: all 0.8s ease;
     z-index: 1000;
@@ -47,10 +47,21 @@ nav  {
 
 /* LOGO */
 .logo {
-    font-size: 26px;              /* aumentado */
+    font-size: 20px;              /* aumentado */
     font-weight: 700;
-    margin-right: 150px;           /* aproxima do menu */
+    margin-right: 130px;           /* aproxima do menu */
 }
+
+/* GITHUB */
+.github {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 20px;              /* maior */
+    margin-left: 130px;            /* aproxima do centro */
+}
+
 
 /* MENU */
 nav .menu {
@@ -63,16 +74,6 @@ nav .menu li {
     cursor: pointer;
     font-size: 18px;
     font-weight: 500;
-}
-
-/* GITHUB */
-.github {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: 600;
-    font-size: 26px;              /* maior */
-    margin-left: 150px;            /* aproxima do centro */
 }
 
 /* NAVBAR ESTADO ANIMAÇÃO */
@@ -96,7 +97,7 @@ nav.active {
 
 .main-content {
   flex: 1;                        /* Faz o conteúdo ocupar o espaço disponível */
-  background-color: #2e3440;
+  background-color: rgb(20, 20, 20);
   display: flex;
   flex-direction: column;
   margin-top: 80px;               /* NAV fixa → empurra o conteúdo para baixo */
@@ -106,7 +107,7 @@ nav.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2e3440;
+  background-color: #000000;
   padding: 15px 25px;
   position: relative;
 }

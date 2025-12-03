@@ -42,7 +42,7 @@ nav  {
   background: rgb(0, 0, 0);
   color: white;
   transition: all 0.8s ease;
-    z-index: 1000;
+  z-index: 1000;
 }
 
 /* LOGO */

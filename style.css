@@ -17,52 +17,62 @@ body {
 }
 
 nav .menu li {
-    position: relative;
-    padding: 6px 18px;
-    border-radius: 25px;
-    transition: background 0.25s ease, transform 0.25s ease;
+  position: relative;
+  padding: 6px 18px;
+  border-radius: 25px;
+  transition: background 0.25s ease, transform 0.25s ease;
 }
 
 nav .menu li:hover {
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(8px);
-    transform: translateY(-3px) scale(1.03);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  transform: translateY(-3px) scale(1.03);
 } 
 
 nav  {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;      /* apróxima o centro */
-    align-items: center;
-    gap: 50px;                    /* distancia da logo e do github */
-    padding: 10px 10px;           /* muito mais compacto */
-    background: rgb(0, 0, 0);
-    color: white;
-    transition: all 0.8s ease;
-    z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;      /* apróxima o centro */
+  align-items: center;
+  gap: 50px;                    /* distancia da logo e do github */
+  padding: 10px 10px;           /* muito mais compacto */
+  background: rgb(0, 0, 0);
+  color: white;
+  transition: all 0.8s ease;
+  z-index: 1000;
 }
 
 /* LOGO */
 .logo {
-    font-size: 20px;              /* aumentado */
-    font-weight: 7px;
-    margin-right: 10px;           /* aproxima do menu */
-    /* margin-left: 0 */
+  font-size: 20px;              /* aumentado */
+  font-weight: 7px;
+  margin-right: 10px;           /* aproxima do menu */
+  /* margin-left: 0 */
+}
+nav .logo:hover{
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  transform: translateY(-3px) scale(1.03);
+  border-radius: 25px;
+  padding: 2px 5px;
 }
 
 /* GITHUB */
 .github {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: 600;
-    font-size: 20px;              /* maior */
-    margin-left: 90px;            /* aproxima do centro */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 20px;              /* maior */
+  margin-left: 90px;            /* aproxima do centro */
 }
-
+nav .github:hover{
+  transform: translateY(-3px) scale(1.03);
+  filter: drop-shadow(0.25rem 0 0.75rem #ffffff1e);
+}
 
 /* MENU */
 nav .menu {

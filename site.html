@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tótem POA</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/PoaLogo.png" type="image/x-icon">
+
+  <!-- CSS DO SITE -->
+  <link rel="stylesheet" href="Css/site.css">
+
+  <!-- CSS DO MAPA -->
+  <link rel="stylesheet" href="Css/mapa.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="topbar"></header>
+
+  <div class="container">
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <img src="/PoaLogo.png" class="img-logo">
+      <div class="logo">TotémPOA</div>
+
+      <ul class="menu">
+        <a href="/Sobre.html">Sobre</a>
+        <a href="/Ajuda.html">Ajuda</a>
+        <a href="/Créditos.html">Créditos</a>
+      </ul>
+
+      <div class="github">
+        <a href="https://linktr.ee/githubs" target="_blank" class="fa fa-github" style="font-size:48px;color: #cfcfcf; text-decoration: none; transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;"></a>
+ 
+        </a>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+      <!-- Sobre -->
+      <div id="sobreBox">
+        <button id="btnSobre">Sobre nós</button>
+        <h3>Sobre nós</h3>
+      </div>
+
+      <!-- MAPA -->
+      <section class="map-section">
+
+        <div id="map" role="region" aria-label="Mapa interativo de mobilidade urbana"></div>
+
+        <div id="loading" class="hidden">
+          <span class="spinner"></span>
+          <p id="loading-message">Carregando dados oficiais...</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h2 class="footer-logo">Totém POA</h2>
+
+      <div class="footer-links">
+        <ul>
+          <li><a href="/Créditos.html">Créditos</a></li>
+          <li><a href="/Ajuda.html">Ajuda</a></li>
+          <li><a href="https://linktr.ee/githubs">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+    <p class="footer-copy">&copy; 2025 Totém POA — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.min.js"></script>
+
+  <!-- JS LOCAL -->
+  <script src="Js/site.js"></script>
+  <script src="Js/mapa.js"></script>
+
+</body>
+</html>

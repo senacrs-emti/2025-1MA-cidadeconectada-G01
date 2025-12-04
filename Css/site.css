@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html, body {
+  height: 100%;        /* Necessário para que o flex-column funcione na página toda */
+}
+
+body {
+  background-color: #151414;
+  color: white;
+  display: flex;       /* Coloca página inteira em flex */
+  flex-direction: column; /* Empilha os elementos de cima para baixo */
+}
+
+nav .menu a {
+    position: relative;
+    padding: 6px 18px;
+    border-radius: 25px;
+    transition: background 0.25s ease, transform 0.25s ease;
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+nav .menu a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    transform: translateY(-3px) scale(1.03);
+} 
+
+nav  {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;      /* apróxima o centro */
+    align-items: center;
+    gap: 50px;                    /* distancia da logo e do github */
+    padding: 10px 10px;           /* muito mais compacto */
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: all 0.8s ease;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+    font-size: 20px;              /* aumentado */
+    font-weight: 7px;
+    margin-right: 130px;           /* aproxima do menu */
+    /* margin-left: 0 */
+}
+
+/* GITHUB */
+.github {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 20px;              /* maior */
+    margin-left: 130px;            /* aproxima do centro */
+}
+
+
+/* MENU */
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 22px;                    /* espaço entre textos */
+}
+
+nav .menu li {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* NAVBAR ESTADO ANIMAÇÃO */
+nav.active {
+    width: 70%;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    background: rgba(20, 20, 20, 0.75);
+    backdrop-filter: blur(12px);
+    padding: 15px 32px;
+    border-radius: 40px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+}
+
+.img-logo {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.main-content {
+  flex: 1;                        /* Faz o conteúdo ocupar o espaço disponível */
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;               /* NAV fixa → empurra o conteúdo para baixo */
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #151414;
+  padding: 15px 25px;
+  position: relative;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #eceff4;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+
+#btnSobre {
+  background-color: #5e81ac;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btnSobre:hover {
+  background-color: #81a1c1;
+}
+
+#sobreBox {
+  display: none;
+  position: absolute;
+  top: 75px;
+  right: 25px;
+  width: 350px;
+  background-color: #5e81ac;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+  z-index: 100;
+}
+
+#sobreBox h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#sobreBox p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/*---MAPA---*/
+.map-section {
+  flex: 1;
+  padding: 20px;
+  margin-top: 35px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f5f5f5
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+    filter: drop-shadow(10px 0 0 #000000) brightness(200%);
+}
+
+footer hr {
+    margin-top: 10px;
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: white;
+}

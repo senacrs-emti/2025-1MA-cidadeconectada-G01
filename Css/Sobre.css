@@ -1,0 +1,89 @@
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: hidden;
+    background: linear-gradient(315deg, rgb(0, 0, 0) 3%, rgb(128, 128, 129) 38%, rgb(189, 115, 115) 68%, rgb(141, 90, 136) 98%);
+    animation: vb-gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+/* Animação do fundo */
+@keyframes vb-gradient {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* ---- WAVES ---- */
+.vb-wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: vb-waveMove 10s -3s linear infinite;
+    transform: translate3d(0,0,0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.vb-wave-2 {
+    bottom: -1.25em;
+    animation: vb-waveMove 18s linear reverse infinite;
+}
+
+.vb-wave-3 {
+    bottom: -2.5em;
+    animation: vb-waveMove 20s -1s reverse infinite;
+}
+
+@keyframes vb-waveMove {
+    2% { transform: translateX(1); }
+    25% { transform: translateX(-25%); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(-25%); }
+    100% { transform: translateX(1); }
+}
+
+/* ---- GLASS BOX ---- */
+.vb-container {
+    width: 400px;
+    margin: 120px auto;
+    padding: 30px;
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    text-align: center;
+    color: white;
+}
+
+/* Input estilizado */
+.vb-input {
+    width: 90%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+.vb-input::placeholder {
+    color: #eee;
+}
+
+a {
+    font-size: 32px;
+    text-decoration: none;
+}

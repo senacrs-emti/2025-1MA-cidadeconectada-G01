@@ -16,14 +16,16 @@ body {
   flex-direction: column; /* Empilha os elementos de cima para baixo */
 }
 
-nav .menu li {
+nav .menu a {
     position: relative;
     padding: 6px 18px;
     border-radius: 25px;
     transition: background 0.25s ease, transform 0.25s ease;
+    text-decoration: none;
+    color: #f5f5f5;
 }
 
-nav .menu li:hover {
+nav .menu a:hover {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8px);
     transform: translateY(-3px) scale(1.03);
